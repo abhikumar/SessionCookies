@@ -3,6 +3,9 @@
   <welcome-file-list>
     <welcome-file>login.html</welcome-file>
   </welcome-file-list>
+  <listener>
+    <listener-class>ContextLis</listener-class>
+  </listener>
   <servlet>
     <servlet-name>Login</servlet-name>
     <servlet-class>Login</servlet-class>
@@ -10,5 +13,13 @@
   <servlet-mapping>
     <servlet-name>Login</servlet-name>
     <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UrlServlet</servlet-name>
+    <servlet-class>UrlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UrlServlet</servlet-name>
+    <url-pattern>/UrlServlet</url-pattern>
   </servlet-mapping>
 </web-app>
